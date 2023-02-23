@@ -1,17 +1,31 @@
-## Running React on Repl.it
+# Pixabay Image Search
+## Tom Zahn - [https://github.com/thomasjzahn/](https://github.com/thomasjzahn/)
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+## General Info
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+This is a ReactJS single-page application built using Create React App & Vite, and hosted on [Replit](https://replit.com/@thomasjzahn/pixabay-search?v=1)
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+## Installation
+Run `npm install` then `npm run dev` to start the web server
 
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
+## Use
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+There are 2 main screens to this app:
 
-### Typescript
+### Image Search
 
-Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+* Search Pixabay for images using the search box
+* A collection of image thumbnails will be displayed in the search results
+* Click any image thumbnail to bring up **Image Details**
+
+### Image Details
+
+* Clicking on an image thumbnail will display image details
+* Details include full-size image, User, Tags, and other stats
+* Click "Back to Search Results" button to return to **Image Search** screen
+
+## Misc
+
+* Secret data (Pixabay API key) is hard-coded into codebase due to limited time constraints of this project
+* In a real, production application, it is a best practice to access these secrets using an Environment Variable or other method where it is not in the codebase.
+
